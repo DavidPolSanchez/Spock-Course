@@ -12,8 +12,7 @@ class ThirdExample extends Specification{
         when:
         def sum = obj.adder(2,3)
 
-        then :
-        sum ==5
+        then:
+        sum == 5
     }
-
 }

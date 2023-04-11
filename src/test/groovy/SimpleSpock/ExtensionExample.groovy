@@ -1,5 +1,7 @@
 package SimpleSpock
 
+import spock.lang.Ignore
+import spock.lang.Retry
 import spock.lang.Timeout
 import spock.lang.IgnoreRest
 import spock.lang.Issue
@@ -11,7 +13,7 @@ class ExtensionExample extends Specification{
         given:
         println "we are in feature 1"
     }
-    //@IgnoreRest
+    //@Ignore
     def "feature 2"(){
         given:
         println "we are in feature 2"
@@ -21,10 +23,12 @@ class ExtensionExample extends Specification{
         given:
         println "we are in feature 3"
     }
-    @Timeout(2)
+    @Retry(count=1)
     def "feature 4"(){
         given:
-        println "we are in feature 4"
+            println "we are in feature 4"
+        expect:
+            assert false
     }
 
 }

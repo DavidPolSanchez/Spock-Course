@@ -6,7 +6,8 @@ import spock.lang.*
 class SpecificationClass extends Specification {
 
     //instance fields
-    @Shared def obj = new SumOfTwoNumbers()
+    @Shared
+    def obj = new SumOfTwoNumbers()
 
     def "feature method one"(){
         given:

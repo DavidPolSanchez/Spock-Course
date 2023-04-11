@@ -12,8 +12,7 @@ You will have access to diferent examples, interactions and a events with the Sp
     - Extension Example
         - [Issue](https://spockframework.org/spock/docs/2.3/extensions.html#_issue)
         - [Ignore](https://spockframework.org/spock/docs/2.3/extensions.html#_ignore)
-        - [TimeOut](https://spockframework.org/spock/docs/2.3/extensions.html#_timeout)
-        
+        - [Retry](https://spockframework.org/spock/docs/2.3/extensions.html#_retry)        
     - FixtureExample
         - [FixtureMethods](https://spockframework.org/spock/docs/2.3/spock_primer.html#_fixture_methods)
     - Third Example
